@@ -1,80 +1,45 @@
-# Tasks — Todo Monorepo
+# Tasks -- Todo Monorepo
 
 ## Phase 1: Foundation
 
 ### TASK-001: Monorepo Root Setup
-- **Status:** ⏳ TODO
-- **Assignee:** Backend Engineer
+- **Status:** DONE
 - **Branch:** `feat/foundation`
-- **Description:** Create root package.json, pnpm-workspace.yaml, tsconfig.base.json, .gitignore updates
-- **Acceptance Criteria:**
-  - pnpm workspaces configured for packages/* and apps/*
-  - Base tsconfig with strict mode
-  - Root scripts for building
+- **Description:** Root package.json, pnpm-workspace.yaml, tsconfig.base.json, .gitignore updates
 
 ### TASK-002: Shared Types Package
-- **Status:** ⏳ TODO
-- **Assignee:** Backend Engineer
+- **Status:** DONE
 - **Branch:** `feat/foundation`
-- **Description:** Create packages/types with Todo, CreateTodoInput, UpdateTodoInput
-- **Acceptance Criteria:**
-  - Package named @todo-monorepo/types
-  - All three types exported
-  - TypeScript strict mode
+- **Description:** packages/types with Todo, CreateTodoInput, UpdateTodoInput
 
 ### TASK-003: Shared API Client Package
-- **Status:** ⏳ TODO
-- **Assignee:** Backend Engineer
+- **Status:** DONE
 - **Branch:** `feat/foundation`
-- **Description:** Create packages/api-client with fetch-based TodoApiClient
-- **Acceptance Criteria:**
-  - Package named @todo-monorepo/api-client
-  - Uses @todo-monorepo/types
-  - All CRUD + toggle methods implemented
+- **Description:** packages/api-client with fetch-based TodoApiClient
 
 ---
 
 ## Phase 2: Backend
 
 ### TASK-004: Hono REST API
-- **Status:** ⏳ TODO
-- **Assignee:** Backend Engineer
+- **Status:** DONE
 - **Branch:** `feat/backend`
-- **Description:** Create apps/backend with Hono server, SQLite database, CRUD routes
-- **Acceptance Criteria:**
-  - Hono (NOT Express) server on port 3001
-  - SQLite database with todos table
-  - All 6 API endpoints working
-  - CORS enabled
-  - Uses @todo-monorepo/types
+- **Description:** apps/backend with Hono server, SQLite database, CRUD routes, CORS
 
 ---
 
 ## Phase 3: Web Frontend
 
 ### TASK-005: TanStack Start Web App
-- **Status:** ⏳ TODO
-- **Assignee:** Frontend Engineer
+- **Status:** DONE
 - **Branch:** `feat/web`
-- **Description:** Create apps/web with TanStack Start, React 19, full CRUD UI
-- **Acceptance Criteria:**
-  - TanStack Start with Vite 7
-  - Uses @todo-monorepo/api-client
-  - Full CRUD operations in UI
-  - Toggle completion checkbox
-  - Runs on port 3000
+- **Description:** apps/web with TanStack Start, React 19, Vite 7, full CRUD UI
 
 ---
 
 ## Phase 4: Mobile
 
 ### TASK-006: Expo Mobile App
-- **Status:** ⏳ TODO
-- **Assignee:** Mobile Engineer
+- **Status:** DONE
 - **Branch:** `feat/mobile`
-- **Description:** Create apps/mobile with Expo, Expo Router, full CRUD UI
-- **Acceptance Criteria:**
-  - Expo with Expo Router
-  - Uses @todo-monorepo/api-client
-  - Full CRUD operations in UI
-  - Toggle completion
+- **Description:** apps/mobile with Expo SDK 53, Expo Router, full CRUD UI
