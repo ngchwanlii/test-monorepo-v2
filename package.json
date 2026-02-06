@@ -1,0 +1,14 @@
+{
+  "name": "todo-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev:backend": "pnpm --filter @todo-monorepo/backend dev",
+    "dev:web": "pnpm --filter @todo-monorepo/web dev",
+    "dev:mobile": "pnpm --filter @todo-monorepo/mobile start",
+    "clean": "pnpm -r exec rm -rf dist node_modules"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

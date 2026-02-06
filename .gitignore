@@ -1,2 +1,11 @@
 node_modules/
+dist/
 .claude/
+*.db
+*.sqlite
+.DS_Store
+.env
+.env.local
+.expo/
+ios/
+android/
